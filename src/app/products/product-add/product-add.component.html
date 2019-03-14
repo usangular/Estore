@@ -1,0 +1,59 @@
+<div class="row">
+  <div class="col-xs-12">
+
+    <form (ngSubmit)="onAddProduct(f)" #f="ngForm">
+
+      <div class="row">
+        <div class="col-xs-12">
+          <button type="submit" class="btn btn-success">
+            Save
+          </button>
+          <button type="button" class="btn btn-danger">
+            Cancel
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="name">Name Ex: Apple iWatch</label>
+            <input type="text" id="name" class="form-control" name="name" ngModel>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="imagePath">Image Name (Copy the image in assets/Images folder) Ex: iWatch.jpg</label>
+            <input type="text" id="imagePath" class="form-control" name="imagePath" ngModel>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="description">Description</label>
+            <textarea type="text" id="description" class="form-control" rows="6" name="description" ngModel>
+                 </textarea>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="form-group">
+            <label for="productPrice">Price</label>
+            <input type="number" id="productPrice" class="form-control" name="productPrice" ngModel>
+          </div>
+        </div>
+      </div>
+
+
+    </form>
+  </div>
+</div>
